@@ -182,7 +182,6 @@ footer p{
     font-weight: normal;
 }
 
-
 .worksgrid{
     display: grid;
     gap: 1.5rem;
@@ -201,7 +200,6 @@ footer p{
     width: 40%;
    object-fit: contain;
 }
-
 
 .worktext{
     line-height: 3rem;
@@ -332,6 +330,7 @@ input[type="submit"]:hover{
     text-align: left;
 }
 
+
 /*モバイル*/
 
 @media(max-width:600px){
@@ -347,17 +346,17 @@ input[type="submit"]:hover{
     }
 
     .site-logo{
-        width: 3rem;
+        width: 4rem;
         height: auto;
         margin: 1rem 0 0 0 ;
     }
 
     .main-nav{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     
     .icons{
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
     .main-nav li{
@@ -391,11 +390,21 @@ input[type="submit"]:hover{
     }
 
     .skillsgrid{
-        font-size: 0.8rem;
         display: block;
         flex-direction: column;
         text-align: center;
         justify-content: space-between;
+    }
+
+    .skill h3{
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .skill p{
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+        margin-bottom: 2rem;
     }
 
     /*works*/
@@ -406,8 +415,39 @@ input[type="submit"]:hover{
     .worksgrid{
         font-size: 0.6rem;
         display: block;
+        flex-direction: column;
         justify-content: space-between;
     }
+
+    .work{
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .worktext{
+        line-height: 1.5rem;
+
+    }
+
+    .work h4{
+        font-size: 1rem;
+    }
+
+    .work p{
+        font-size: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .btn{
+        font-size: 0.8rem;
+        background: #506cea54;
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
 
      /*contact*/
      .contact-title{
@@ -420,5 +460,32 @@ input[type="submit"]:hover{
         font-size: 1rem;
     }
 
+    form , aside{
+        width: 100%;
+    }
+
+
+  label{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+ input[type="name-c"],
+ input[type="email"],
+ input[type="phone"],
+ textarea{
+    font-size: 0.8rem;
+    width: 100%;
+ }
+
+ textarea{
+    width: 100%;
+    height: 6rem;
+ }
+
+  .coment{
+        font-size: 1rem;
+    }
 
 }
