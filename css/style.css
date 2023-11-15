@@ -385,7 +385,7 @@ input[type="submit"]:hover{
     }
 
     .about p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-top: 1rem;
     }
 
@@ -403,12 +403,12 @@ input[type="submit"]:hover{
     }
 
     .skill h3{
-        font-size: 1rem;
-        margin-top: 0;
+        font-size: 1.2rem;
+        margin-top: 1;
     }
 
     .skill p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-top: 0.2rem;
         margin-bottom: 2rem;
     }
@@ -419,7 +419,6 @@ input[type="submit"]:hover{
     }
 
     .worksgrid{
-        font-size: 0.6rem;
         display: block;
         flex-direction: column;
         justify-content: space-between;
@@ -431,16 +430,15 @@ input[type="submit"]:hover{
     }
 
     .worktext{
-        line-height: 1.5rem;
-
+        line-height: 2rem;
     }
 
     .work h4{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .work p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding-bottom: 0.8rem;
     }
 
@@ -449,8 +447,8 @@ input[type="submit"]:hover{
         background: #506cea54;
         color: #fff;
         border-radius: 5px;
-        margin-top: 1rem;
-        padding: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 0.4rem;
         text-align: center;
     }
     
@@ -470,7 +468,6 @@ input[type="submit"]:hover{
         width: 100%;
     }
 
-
   label{
     font-size: 1rem;
     margin-bottom: 0.5rem;
@@ -481,7 +478,7 @@ input[type="submit"]:hover{
  input[type="email"],
  input[type="phone"],
  textarea{
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 100%;
  }
 
