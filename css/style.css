@@ -98,7 +98,10 @@ footer p{
 
 #name-t{
     text-align: center;
-    margin: 15% 0 20% 0;
+    padding: 15% 0 20% 0;
+    text-align: center;
+    background-color: #ffffff65;
+    background-size: cover;
 }
 
 .name-title{
@@ -364,6 +367,9 @@ input[type="submit"]:hover{
     }
 
     /*name*/
+    #name-t{
+        padding: 30% 0 20% 0;
+    }
 
     .name-title{
         font-size: 2.5rem;
