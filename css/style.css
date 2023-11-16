@@ -7,6 +7,7 @@ html{
 
 body{
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgba(20, 16, 29, 0.752);
 }
 
@@ -41,6 +42,7 @@ img{
 /*header*/
 
 header{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     display: flex;
     justify-content: space-between;
     top: 0;
@@ -85,6 +87,7 @@ header{
 /*footer*/
 
 footer{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     padding: 0 auto;
     background:#506cea54;
     text-align: center;
@@ -101,6 +104,7 @@ footer p{
 /*name*/
 
 #name-t{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
     padding: 15% 0 20% 0;
     text-align: center;
@@ -130,6 +134,7 @@ footer p{
 }
 
 .about-title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 5rem;
     font-weight: normal;
 }
@@ -147,6 +152,7 @@ footer p{
 }
 
 .skills-title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 5rem;
     font-weight: normal;
 }
@@ -184,6 +190,7 @@ footer p{
 }
 
 .works-title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
     font-size: 5rem;
     font-weight: normal;
@@ -249,6 +256,7 @@ footer p{
 }
 
 .contact-title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 5rem;
     font-weight: normal;
 }
@@ -418,7 +426,7 @@ input[type="submit"]:hover{
           cursor: pointer;
           display: flex;
           flex-direction: column;
-          gap: 0.3rem; 
+          gap: 0.3125rem; 
           height: 2rem;
           justify-content: center;
           width: 2rem;
@@ -430,7 +438,7 @@ input[type="submit"]:hover{
         display: block;
         height: 1px; 
         transition: 0.3s; 
-        width: 1.3rem; 
+        width: 1.25rem; 
       }
       
       @media screen and (max-width: 600px) {
