@@ -23,8 +23,12 @@
 
      <div id="home" class="big-bg">
        <header class="page-header ">
-          <div><a href="index.html"><img src="images/p-chanlogo.png" alt="ロゴ" class="site-logo"></a></div>
-             <ul class="main-nav">
+          <div><a href="index.html"><img src="images/p-chanlogo.png" alt="サイトロゴ" class="site-logo"></a></div>
+
+          <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
+          <label for="hamburger" class="c-hamburger-menu__bg"></label>
+          
+             <ul class="main-nav c-hamburger-menu__list">
                     <li><a href="#about">about</a></li>
                     <li><a href="#skills">skills</a></li>
                     <li><a href="#works">works</a></li>
@@ -33,6 +37,11 @@
                     <li><a href="https://www.instagram.com/pchanoff/"><img src="images/Instagram_Glyph_Black.png" alt="instagram" class="icons"></a></li>
                     <li><a href="https://note.com/taiyakino_note/"><img src="images/icon.png" alt="note" class="icons"></a></li>
              </ul>
+             <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+               <span class="c-hamburger-menu__button-mark"></span>
+               <span class="c-hamburger-menu__button-mark"></span>
+               <span class="c-hamburger-menu__button-mark"></span>
+             </label>
        </header>
      </div>
 
