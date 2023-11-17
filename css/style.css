@@ -552,11 +552,17 @@ input[type="submit"]:hover{
         justify-content: space-between;
     }
 
+
     .work{
         margin-top: 1rem;
         padding: 1rem;
         width: auto;
+        margin: 1.5rem auto;
     }    
+
+    .workimage{
+        max-width: 100px;
+    }
 
     .worktext{
         line-height: 2rem;
