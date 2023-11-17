@@ -551,6 +551,7 @@ input[type="submit"]:hover{
         flex-direction: column;
         justify-content: space-between;
     }
+    
 
 
     .work{
@@ -559,14 +560,23 @@ input[type="submit"]:hover{
         width: auto;
         margin: 1.5rem auto;
     }    
+    
 
     .workimage{
+        width: 100px;
+        min-width: 100px;
         max-width: 100px;
     }
 
     .worktext{
         line-height: 2rem;
         margin: auto auto auto 10%;
+    }
+    
+    .worktext{
+        line-height: 2rem;
+        width: 50%;
+       margin: auto auto auto 10%;
     }
 
     .work h4{
