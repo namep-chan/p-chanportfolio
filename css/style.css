@@ -54,9 +54,15 @@ header{
     position: fixed;
 }
 
+
 .site-logo{
     height:3rem;
+    min-width: 5rem;
+}
 
+.site-logo:hover{
+    opacity:0.5;
+	transition:0.3s;
 }
 
 .main-nav{
@@ -66,21 +72,28 @@ header{
 }
 
 .main-nav li{
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 .main-nav a{
     color: #666666;
 }
 
-.main-nav a:hover{
-    color: #5280F6;
+.main-nav :hover{
+	opacity:0.8;
+	transition:0.3s;
 }
 
 .icons{
     width: 2.5rem;
+    min-width: 2rem;
+    height:auto;
 }
 
+.icons:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
 
 
 
@@ -141,6 +154,8 @@ footer p{
 
 .about p{
     font-size: 1.5rem;
+    margin-top: 1rem;
+
 }
 
 
@@ -199,29 +214,35 @@ footer p{
 .worksgrid{
     display: grid;
     gap: 1.5rem;
-    grid-template-columns:repeat(2,minmax(240px,1fr));
+    grid-template-columns:1fr 1fr;
     margin: 2% 0 2% 0;
 }
 
 .work{
     background-color: #fff;
-    padding: 1.5rem 0.5rem 1.5rem 3rem;
+    padding: 3rem 0.5rem 3rem 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 480px;
 }
 
 .workimage{
-    width: 40%;
-   object-fit: contain;
+   width: 200px;
+   min-width: 200px;
+   height: auto;
    display: flex;
-   justify-content: center;
    align-items: center;
+}
 
+.workimage:hover{
+    opacity:0.5;
+	transition:0.3s;
 }
 
 .worktext{
     line-height: 3rem;
     width: 50%;
+   margin: auto 5% auto 5%;
 }
 
 .worktext h4{
@@ -238,7 +259,7 @@ footer p{
     background: #506cea54;
     color: #fff;
     border-radius: 5px;
-    margin-top: 1.5rem;
+    margin: auto auto auto 0;
     padding: 0.5rem 1rem;
     text-align: center;
 }
@@ -305,7 +326,6 @@ textarea{
     width: 70%;
 }
 
-
 textarea{
     width: 100%;
     max-width: 480px;
@@ -346,9 +366,25 @@ input[type="submit"]:hover{
 }
 
 
+/*レスポンシブ*/
+@media screen and (max-width: 1050px) {
+    .worksgrid{
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .work{
+        margin-top: 1rem;
+        padding: 1rem;
+        width:480px;
+        margin: 1.5rem auto;
+    }    
+}
+
+  
 /*モバイル*/
 
-@media(max-width:600px){
+@media screen and (max-width: 600px) {
 
     /*header*/
 
@@ -368,7 +404,6 @@ input[type="submit"]:hover{
         background-color: #00000000;
     }
 
-    @media screen and (max-width: 600px) {
         .c-hamburger-menu__list {
           background-color: #eeeeeee9; 
           align-items: flex-start;
@@ -389,7 +424,6 @@ input[type="submit"]:hover{
           transform: translateX(0%);
           transition: 0.3s;
         }
-      }
       
       .c-hamburger-menu__input {
         display: none;
@@ -417,7 +451,6 @@ input[type="submit"]:hover{
         margin: 0.5rem ;
       }
 
-      @media screen and (max-width: 600px) {
         .c-hamburger-menu__button {
           align-items: center;
           appearance: none;
@@ -431,7 +464,6 @@ input[type="submit"]:hover{
           justify-content: center;
           width: 2rem;
         }
-      }
       
       .c-hamburger-menu__button-mark {
         background-color:rgba(20, 16, 29, 0.752); 
@@ -441,7 +473,6 @@ input[type="submit"]:hover{
         width: 1.25rem; 
       }
       
-      @media screen and (max-width: 600px) {
         #hamburger:checked
           ~ .c-hamburger-menu__button
           .c-hamburger-menu__button-mark:nth-of-type(1) {
@@ -459,7 +490,6 @@ input[type="submit"]:hover{
           transform: translate(2px, 3px) rotate(-45deg); 
           transform-origin: 0%; 
         }
-      }
 
     
 
@@ -469,11 +499,11 @@ input[type="submit"]:hover{
     }
 
     .name-title{
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 
     .name-t p{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     /*about*/
@@ -525,10 +555,12 @@ input[type="submit"]:hover{
     .work{
         margin-top: 1rem;
         padding: 1rem;
-    }
+        width: auto;
+    }    
 
     .worktext{
         line-height: 2rem;
+        margin: auto auto auto 10%;
     }
 
     .work h4{
